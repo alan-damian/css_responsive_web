@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hr hr hr hr hr hr"
+    "sb ct ct ct ct ch"
+    "sb ct ct ct ct ch"
+    "ft ft ft ft ft ft";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 20% 20%; 
+}
+
+header {
+    grid-area: hr;
+    background-color: aliceblue;
+}
+
+aside {
+    grid-area: sb;
+    background-color: aliceblue;
+}
+
+.section1 {
+    grid-area: ct;
+    background-color: aliceblue;
+}
+
+.section2 {
+    grid-area: ch;
+    background-color: aliceblue;
+}
+
+footer {
+    grid-area: ft;
+    background-color: aliceblue;
+}
